@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewData["Title"] = "Login";
+}
+
+<h1>Login</h1>
+<form asp-action="ValidateEmployee" asp-controller="Employee" method="post">
+<table>
+    <tr>
+        <th> User Id</th>
+    <td>
+        <input type="text"
+               id="UserId"
+               name="UserId"/>
+    </td>
+    </tr>
+    <tr>
+        <th>Passaword</th>
+        <td>
+           <input type="password"
+                  id="Pwd"
+                  name="Pwd"/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="button"
+                   value="Clear"/>
+        </td>
+        <td>
+            <input type="submit"
+                   value="Login" />
+        </td>
+    </tr>
+</table>
+</form>
